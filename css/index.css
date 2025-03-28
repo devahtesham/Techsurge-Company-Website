@@ -219,7 +219,6 @@ button.learn-more {
 
 /* OUR TECHNOLOGIES  */
 .tech-content p,
-.dev-process-content-heading p,
 .tech-talk-header p {
     padding-right: 30rem
 }
@@ -374,28 +373,17 @@ button.nav-link:hover {
 
 /* OUR DEVEOPMENT PROCESSES */
 .process-card {
-    flex: 0 0 330px;
+    flex: 0 0 345px;
     margin-bottom: 40px;
     cursor: pointer;
     padding: 15px;
     transition-duration: 0.4s;
-    box-shadow: 7px 7px 9px 0 #00000014;
     border-radius: var(--rounded);
-    height: 210px;
-}
-
-.process-card svg {
-    width: 46px;
-    /* background: #F3F4F6; */
-    border-radius: 50%;
-    padding: 5px;
 }
 
 
 
 .process-card:hover {
-    background-color: var(--secondary-clr);
-    color: #fff;
     transform: translateY(-10px);
 }
 
@@ -1471,4 +1459,78 @@ h1#blog-title {
         transform: scale(1);
         opacity: 0;
     }
+}
+
+
+
+.our-dev-process {
+    background: url(../assets/img/dev-process.png) no-repeat center top/cover;
+}
+
+.our-dev-process.our-values {
+    background: url(../assets/img/our-values-bg.png) no-repeat top center;
+    filter: grayscale(1)
+}
+.our-dev-process.our-values.services {
+    background: url(../assets/img/our-values-bg.png) no-repeat center center;
+}
+
+.process-heading {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.process-heading::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 28%;
+    background-color: #fff;
+    width: 120px;
+    height: 1px;
+    border-radius: 20px;
+}
+
+.process-heading.our-values-heading::after {
+    left: 0;
+    bottom: -22px
+}
+
+.our-values-processes .process-card {
+    position: relative;
+}
+
+.our-values-processes .process-card.none::after {
+    display: none;
+}
+.our-values-processes .process-card::after {
+    position: absolute;
+    content: "";
+    top: 17%;
+    right: -6px;
+    background-color: #fff;
+    width: 1px;
+    height: 125px;
+    border-radius: 20px;
+}
+
+.dev-process-content-heading{
+    padding:30px 300px
+}
+.client-reviews{
+    background: url(../assets/img/review-bg.png) no-repeat center center/cover;
+}
+
+.client-reviews .project-thumb{
+    /* width: 679px; */
+    height: 384px;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+}
+
+.client-reviews .mock-img{
+    width: 136px;
+    height: 136px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
 }

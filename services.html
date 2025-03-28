@@ -23,6 +23,7 @@
 </head>
 
 <body>
+    <div class="cursor"></div>
     <!-- HERO SECTION -->
     <section class="banner about-banner service-banner position-relative overflow-hidden">
         <!-- HEADER -->
@@ -398,39 +399,53 @@
         </div>
     </section>
     <!-- END: TOGGLE THEME SECTIONS -->
-
-    <div class="container-md px-md-0 px-4">
-        <div class="row">
-            <div class="col-md-7">
-                <div class="py-5 pt-md-5 pb-3 tech-content">
-                    <h2 class="sub-heading mb-3">Our Promise of <span class="text-primary-clr">Excellence</span>
-                    </h2>
-                    <ul class="services-main-pg">
-                        <li class="mb-1"><span class="text-primary-clr fw-bold">Quality Assurance</span> – We
-                            maintain exceptional quality in every project, ensuring precision, performance, and
-                            durability.
-                        </li>
-                        <li class="mb-1"><span class="text-primary-clr fw-bold">Innovative Solutions</span> –
-                            Projects infused with fresh ideas and advanced technology, tailored to address your
-                            distinct challenges.
-                        </li>
-                        <li class="mb-1"><span class="text-primary-clr fw-bold">Client-Centric Approach</span> –
-                            Your goals are at the heart of our work; we’re here to turn your vision into a success
-                            story.</li>
-                    </ul>
-                </div>
+    <section class="our-dev-process our-values services py-5 mt-md-5 text-white">
+        <div class="container-md px-md-0 px-4">
+            <div class=" pt-5" data-aos="fade-down" data-aos-delay="120" data-aos-duration="800">
+                <h2 class="sub-heading mb-3">
+                    Our Promise of Excellence
+                </h2>
             </div>
+
+            <section class="processes our-values-processes my-5 pt-2 d-flex flex-wrap justify-content-center gap-sm-5"
+                data-aos="zoom-in" data-aos-delay="120" data-aos-duration="800">
+                <div class="process-card">
+                    <div>
+
+                        <h5 class="fw-bold mt-2 process-heading our-values-heading">Quality Assurance</h5>
+                    </div>
+                    <p>We maintain exceptional quality in every project, ensuring precision, performance, and
+                        durability.</p>
+                </div>
+                <div class="process-card">
+                    <div>
+
+                        <h5 class="fw-bold mt-2 process-heading our-values-heading">Innovative Solutions</h5>
+                    </div>
+                    <p>Projects infused with fresh ideas and advanced technology, tailored to address your distinct
+                        challenges.</p>
+                </div>
+                <div class="process-card none">
+                    <div>
+
+                        <h5 class="fw-bold mt-2 process-heading our-values-heading">Client-Centric Approach</h5>
+                    </div>
+                    <p>Your goals are at the heart of our work; we’re here to turn your vision into a success story.</p>
+                </div>
+
+            </section>
         </div>
-    </div>
+    </section>
 
 
 
 
     <!-- OUR DEVELOPMENT PROCESSES -->
-    <section class="our-dev-process py-md-5">
+    <section class="our-dev-process py-md-5 text-white">
         <div class="container-md container-fluid px-xl-0 px-4">
-            <div class="dev-process-content-heading" data-aos="fade-up" data-aos-delay="120" data-aos-duration="800">
-                <h2 class="sub-heading mb-3">Our Development <span class="text-primary-clr">Process</span></h2>
+            <div class="text-center dev-process-content-heading" data-aos="fade-up" data-aos-delay="120"
+                data-aos-duration="800">
+                <h2 class="sub-heading mb-3">Our Development Process</h2>
                 <p>Our development process is designed to enhance collaboration, speed, and creativity, ensuring that
                     each project advances smoothly from initial concept to final launch.</p>
 
@@ -439,35 +454,20 @@
                 data-aos-delay="120" data-aos-duration="800">
                 <div class="process-card text-center">
                     <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#E54100">
-                            <path
-                                d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM9.71002 19.6674C8.74743 17.6259 8.15732 15.3742 8.02731 13H4.06189C4.458 16.1765 6.71639 18.7747 9.71002 19.6674ZM10.0307 13C10.1811 15.4388 10.8778 17.7297 12 19.752C13.1222 17.7297 13.8189 15.4388 13.9693 13H10.0307ZM19.9381 13H15.9727C15.8427 15.3742 15.2526 17.6259 14.29 19.6674C17.2836 18.7747 19.542 16.1765 19.9381 13ZM4.06189 11H8.02731C8.15732 8.62577 8.74743 6.37407 9.71002 4.33256C6.71639 5.22533 4.458 7.8235 4.06189 11ZM10.0307 11H13.9693C13.8189 8.56122 13.1222 6.27025 12 4.24799C10.8778 6.27025 10.1811 8.56122 10.0307 11ZM14.29 4.33256C15.2526 6.37407 15.8427 8.62577 15.9727 11H19.9381C19.542 7.8235 17.2836 5.22533 14.29 4.33256Z">
-                            </path>
-                        </svg>
-                        <h5 class="fw-bold mt-2">Discovery & Ideation</h5>
+                        <h5 class="fw-bold mt-2 process-heading">Discovery & Ideation</h5>
                     </div>
                     <p>We explore your ideas and goals to create a solid groundwork for your project’s success.</p>
                 </div>
                 <div class="process-card text-center">
                     <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#E54100">
-                            <path
-                                d="M20 22H4C3.44772 22 3 21.5523 3 21V3C3 2.44772 3.44772 2 4 2H20C20.5523 2 21 2.44772 21 3V21C21 21.5523 20.5523 22 20 22ZM19 20V4H5V20H19ZM7 6H11V10H7V6ZM7 12H17V14H7V12ZM7 16H17V18H7V16ZM13 7H17V9H13V7Z">
-                            </path>
-                        </svg>
-                        <h5 class="fw-bold mt-2">Strategic Planning</h5>
+                        <h5 class="fw-bold mt-2 process-heading">Strategic Planning</h5>
                     </div>
                     <p>We create a customised roadmap with specific milestones and deliverables tailored to your needs.
                     </p>
                 </div>
                 <div class="process-card text-center">
                     <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#E54100">
-                            <path
-                                d="M15.7279 9.57627L14.3137 8.16206L5 17.4758V18.89H6.41421L15.7279 9.57627ZM17.1421 8.16206L18.5563 6.74785L17.1421 5.33363L15.7279 6.74785L17.1421 8.16206ZM7.24264 20.89H3V16.6473L16.435 3.21231C16.8256 2.82179 17.4587 2.82179 17.8492 3.21231L20.6777 6.04074C21.0682 6.43126 21.0682 7.06443 20.6777 7.45495L7.24264 20.89Z">
-                            </path>
-                        </svg>
-                        <h5 class="fw-bold mt-2">Design</h5>
+                        <h5 class="fw-bold mt-2 process-heading">Design</h5>
                     </div>
                     <p>Our team develops wireframes and prototypes to visualise the user experience and interface
                         clearly.
@@ -475,35 +475,20 @@
                 </div>
                 <div class="process-card text-center">
                     <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#E54100">
-                            <path
-                                d="M18.3643 10.9792C19.9264 12.5413 19.9264 15.0739 18.3643 16.636L12.7075 22.2929C12.317 22.6834 11.6838 22.6834 11.2933 22.2929L5.63642 16.636C4.07432 15.0739 4.07432 12.5413 5.63642 10.9792C7.19851 9.41709 9.73117 9.41709 11.2933 10.9792L11.9997 11.6856L12.7075 10.9792C14.2696 9.41709 16.8022 9.41709 18.3643 10.9792ZM7.05063 12.3934C6.26958 13.1744 6.26958 14.4408 7.05063 15.2218L12.0004 20.1716L16.9501 15.2218C17.7312 14.4408 17.7312 13.1744 16.9501 12.3934C16.1691 11.6123 14.9027 11.6123 14.1203 12.3948L11.9983 14.5126L9.87906 12.3934C9.09801 11.6123 7.83168 11.6123 7.05063 12.3934ZM12.0004 1C14.2095 1 16.0004 2.79086 16.0004 5C16.0004 7.20914 14.2095 9 12.0004 9C9.79124 9 8.00038 7.20914 8.00038 5C8.00038 2.79086 9.79124 1 12.0004 1ZM12.0004 3C10.8958 3 10.0004 3.89543 10.0004 5C10.0004 6.10457 10.8958 7 12.0004 7C13.1049 7 14.0004 6.10457 14.0004 5C14.0004 3.89543 13.1049 3 12.0004 3Z">
-                            </path>
-                        </svg>
-                        <h5 class="fw-bold mt-2">Development</h5>
+                        <h5 class="fw-bold mt-2 process-heading">Development</h5>
                     </div>
                     <p>We employ agile methodologies to build, test, and refine the product, ensuring flawless
                         functionality.</p>
                 </div>
                 <div class="process-card text-center">
                     <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#E54100">
-                            <path
-                                d="M9.97308 18H14.0269C14.1589 16.7984 14.7721 15.8065 15.7676 14.7226C15.8797 14.6006 16.5988 13.8564 16.6841 13.7501C17.5318 12.6931 18 11.385 18 10C18 6.68629 15.3137 4 12 4C8.68629 4 6 6.68629 6 10C6 11.3843 6.46774 12.6917 7.31462 13.7484C7.40004 13.855 8.12081 14.6012 8.23154 14.7218C9.22766 15.8064 9.84103 16.7984 9.97308 18ZM14 20H10V21H14V20ZM5.75395 14.9992C4.65645 13.6297 4 11.8915 4 10C4 5.58172 7.58172 2 12 2C16.4183 2 20 5.58172 20 10C20 11.8925 19.3428 13.6315 18.2443 15.0014C17.624 15.7748 16 17 16 18.5V21C16 22.1046 15.1046 23 14 23H10C8.89543 23 8 22.1046 8 21V18.5C8 17 6.37458 15.7736 5.75395 14.9992ZM13 10.0048H15.5L11 16.0048V12.0048H8.5L13 6V10.0048Z">
-                            </path>
-                        </svg>
-                        <h5 class="fw-bold mt-2">Quality Assurance</h5>
+                        <h5 class="fw-bold mt-2 process-heading">Quality Assurance</h5>
                     </div>
                     <p>Through thorough testing, we ensure the final product meets the highest quality standards</p>
                 </div>
                 <div class="process-card text-center">
                     <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#E54100">
-                            <path
-                                d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM4 5V19H20V5H4ZM12 15H18V17H12V15ZM8.66685 12L5.83842 9.17157L7.25264 7.75736L11.4953 12L7.25264 16.2426L5.83842 14.8284L8.66685 12Z">
-                            </path>
-                        </svg>
-                        <h5 class="fw-bold mt-2">Launch & Optimisation</h5>
+                        <h5 class="fw-bold mt-2 process-heading">Launch & Optimisation</h5>
                     </div>
                     <p>We oversee the deployment of your product and provide ongoing support, continuously monitoring
                         and optimising for success.</p>
@@ -514,7 +499,7 @@
     <!-- OUR DEVELOPMENT PROCESSES -->
 
     <!-- WHAT CLIENT SAYS -->
-    <section class="testimonials position-relative bg-secondary-clr pb-5">
+    <!-- <section class="testimonials position-relative bg-secondary-clr pb-5">
         <div class="testimonial-grad"></div>
         <div class="container-md container-fluid">
             <div class="row justify-content-center">
@@ -743,14 +728,92 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- END: WHAT CLIENT SAYS -->
 
-    <!-- <section class="core-services-banner my-5" data-aos="fade-up" data-aos-delay="120" data-aos-duration="800">
+    <section class="client-reviews py-5">
+        <div class="container">
+            <div class="row py-5 justify-content-between">
+                <div class="col-5">
+                    <div class="project-thumb w-100">
 
-        <img src="./assets/img/core-services-banner.jpg" class="w-100" alt="core-services-banner">
+                    </div>
+                    <h4 class="text-white mt-3">Quality Assurance</h4>
+                    <div class="mt-5">
+                        <button class="learn-more">
+                            <a href="/about.html">Project Enquiry</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="#E54100"
+                            class="bi bi-quote" viewBox="0 0 16 16">
+                            <path
+                                d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
+                        </svg>
+                    </div>
+                    <div class="swiper reviews-content-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="reviews-content-box text-white">
+                                    <p class="mt-2 ps-2">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has
+                                        been the industry's standard dummy text ever since the 1500s, when an unknown
+                                        printer took a
+                                        galley of type and scrambled it to make a type specimen book. It has survived
+                                        not only five
+                                        centuries, but also the leap into electronic typesetting, remaining essentially
+                                        unchanged.
+                                        It was popularised in the 1960s
+                                    </p>
+                                    <div class="d-flex align-items-center gap-2 mt-4">
+                                        <div class="client-img">
+                                            <div class="mock-img"></div>
+                                        </div>
+                                        <div>
+                                            <h6 class="m-0 mb-1">Name Person Here</h6>
+                                            <span>Quality Assurance</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="reviews-content-box text-white">
+                                    <p class="mt-2 ps-2">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has
+                                        been the industry's standard dummy text ever since the 1500s, when an unknown
+                                        printer took a
+                                        galley of type and scrambled it to make a type specimen book. It has survived
+                                        not only five
+                                        centuries, but also the leap into electronic typesetting, remaining essentially
+                                        unchanged.
+                                        It was popularised in the 1960s
+                                    </p>
+                                    <div class="d-flex align-items-center gap-2 mt-4">
+                                        <div class="client-img">
+                                            <div class="mock-img"></div>
+                                        </div>
+                                        <div>
+                                            <h6 class="m-0 mb-1">Name Person Here</h6>
+                                            <span>Software Developer</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+            <div>
 
-    </section> -->
+            </div>
+        </div>
+    </section>
 
     <footer class="bg-secondary-clr pt-5 ">
         <div class="container px-xl-0 px-5">

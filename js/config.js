@@ -14,6 +14,18 @@ var swiper = new Swiper(".hero-section", {
   // },
 });
 
+var swiper = new Swiper(".reviews-content-container", {
+ 
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
+});
+
 // var swiper = new Swiper(".testimonials-section", {
 //   effect: "cards",
 //   grabCursor: true,
