@@ -306,8 +306,7 @@ button.nav-link:hover {
 .sw-publication {
     background-color: #F3F4F6;
     overflow: hidden;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 20px 0;
 }
 
 .sw-publication .sw-publication__scroll-parent {
@@ -325,11 +324,11 @@ button.nav-link:hover {
     top: 0%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .sw-publication .sw-publication__scroll-element .sw-publication__card {
-    flex: 0 0 130px
+    flex: 0 0 170px
 }
 
 .sw-publication .sw-publication__scroll-element .sw-publication__card img {
@@ -1203,23 +1202,11 @@ nav ul li a {
         align-items: center;
     }
 
-    .home-sub-banner-vid-container .content-container {
-        height: 100%;
-    }
-
     .home-sub-banner-vid-container .content-container h1 {
         text-align: center;
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
-    .home-sub-banner {
-        height: 100vh;
-        position: relative;
-    }
-
-    .home-sub-banner .home-sub-banner-vid-container {
-        height: 100%;
-    }
 
     .home-sub-banner video {
         position: absolute;
@@ -1247,8 +1234,8 @@ nav ul li a {
     .processes {
         flex-wrap: nowrap !important;
         overflow: overlay;
-        gap: 30px;
-        padding-left: 17rem;
+        gap: unset;
+        padding-left: 8rem;
     }
 
 
@@ -1558,7 +1545,7 @@ h1#blog-title {
     width: 25px;
 }
 
-.client-reviews .swiper-button-next svg{
+.client-reviews .swiper-button-next svg {
     display: flex;
     width: 25px;
 }
@@ -1583,4 +1570,50 @@ h1#blog-title {
     display: flex;
     top: 27px;
     left: 74rem;
+}
+
+
+@media only screen and (max-width:1200px) {
+    .dev-process-content-heading {
+        padding: unset;
+    }
+    .tech-content p, .tech-talk-header p{
+        padding-right: unset;
+    }
+
+}
+
+
+@media only screen and (max-width:1110px) {
+    .sw-publication__scroll-parent {
+        width: 128rem !important;
+    }
+    .our-dev-process{
+        padding: 84px 0;
+    }
+}
+
+@media only screen and (max-width:550px) {
+    .cursor {
+        display: none;
+    }
+
+    .sw-publication__scroll-parent {
+        width: 95rem !important;
+    }
+    .all-services-images {
+        height: 20rem;
+    }
+    .sw-publication {
+        padding: 5px 0;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .sw-publication .sw-publication__scroll-element .sw-publication__card {
+        flex: 0 0 120px;
+    }
+    .sw-publication__scroll-parent {
+        width: 70rem !important;
+    }
 }
