@@ -372,7 +372,7 @@ button.nav-link:hover {
 
 /* OUR DEVEOPMENT PROCESSES */
 .process-card {
-    flex: 0 0 345px;
+    flex: 0 0 315px;
     margin-bottom: 40px;
     cursor: pointer;
     padding: 15px;
@@ -997,6 +997,7 @@ button.learn-more.learn-more-white:hover a {
 
 /* MEDIA */
 
+
 @media only screen and (max-width:1200px) {
     .tech-talk-swiper .swiper-button-prev {
         top: 30px;
@@ -1332,6 +1333,7 @@ h1#blog-title {
 }
 
 .toggle-container {
+    overflow-x: hidden;
     transition-duration: 0.5s;
 }
 
@@ -1569,7 +1571,26 @@ h1#blog-title {
     border-bottom-left-radius: 20px;
     display: flex;
     top: 27px;
-    left: 74rem;
+    left: 72rem;
+}
+
+.processes.about-page {
+    flex-wrap: wrap !important;
+    overflow: hidden;
+    gap: unset;
+    padding-left: unset;
+
+}
+
+.client-reviews .swiper-slide {
+    margin-right: 10px;
+}
+
+
+@media only screen and (max-width:1400px) {
+    .client-reviews .swiper-button-prev {
+        left: 60rem;
+    }
 }
 
 
@@ -1577,10 +1598,22 @@ h1#blog-title {
     .dev-process-content-heading {
         padding: unset;
     }
-    .tech-content p, .tech-talk-header p{
+
+    .tech-content p,
+    .tech-talk-header p {
         padding-right: unset;
     }
 
+    .about-banner .banner-slide-1-content p {
+        padding-right: 60px
+    }
+
+    .our-values-processes .process-card::after {
+        display: none
+    }
+    .client-reviews .swiper-button-prev {
+        left: 50rem;
+    }
 }
 
 
@@ -1588,8 +1621,29 @@ h1#blog-title {
     .sw-publication__scroll-parent {
         width: 128rem !important;
     }
-    .our-dev-process{
+
+    .our-dev-process {
         padding: 84px 0;
+    }
+
+    .about-banner-corner-text {
+        display: none;
+    }
+
+    .process-heading.our-values-heading::after {
+        left: 27%;
+    }
+
+    .process-heading {
+        text-align: center;
+    }
+
+    .process-card p {
+        text-align: center;
+    }
+
+    .client-reviews .swiper-button-next,.client-reviews .swiper-button-prev{
+        display: none;
     }
 }
 
@@ -1601,18 +1655,27 @@ h1#blog-title {
     .sw-publication__scroll-parent {
         width: 95rem !important;
     }
+
     .all-services-images {
         height: 20rem;
     }
+
     .sw-publication {
         padding: 5px 0;
     }
+
+    .about-content-container {
+        left: 2%;
+        top: 27%;
+    }
+
 }
 
 @media only screen and (max-width:400px) {
     .sw-publication .sw-publication__scroll-element .sw-publication__card {
         flex: 0 0 120px;
     }
+
     .sw-publication__scroll-parent {
         width: 70rem !important;
     }
