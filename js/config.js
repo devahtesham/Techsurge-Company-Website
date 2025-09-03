@@ -20,10 +20,10 @@ var swiper = new Swiper(".reviews-content-container", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
+   autoplay: {
+     delay: 2500,
+     disableOnInteraction: false,
+   },
 });
 
 // var swiper = new Swiper(".testimonials-section", {
